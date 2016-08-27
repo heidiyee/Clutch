@@ -1,0 +1,19 @@
+{
+  "name": "clutch",
+  "version": "1.0.0",
+  "description": "Building Clutch's website based on design comp from Nick",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heidiyee/Clutch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heidiyee/Clutch/issues"
+  },
+  "homepage": "https://github.com/heidiyee/Clutch#readme"
+}
