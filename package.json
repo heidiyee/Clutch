@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/heidiyee/Clutch/issues"
   },
-  "homepage": "https://github.com/heidiyee/Clutch#readme"
+  "homepage": "https://github.com/heidiyee/Clutch#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
