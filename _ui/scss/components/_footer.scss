@@ -1,0 +1,37 @@
+footer {
+    text-align: center;
+
+    a{
+        border: none;
+    }
+
+    .top-footer {
+        padding: 4em 0;
+        background-color: $black;
+
+        > * {
+            font-size: 18px;
+        }
+
+        a {
+            padding-bottom: 2em;
+        }
+        p {
+            padding-top: 2em;
+        }
+    }
+
+    .bottom-footer {
+        background-color: $dark-gray;
+        padding: 4em 0;
+
+        a {
+            padding: 0 0.5em 0;
+            text-decoration: underline;
+        }
+
+        p {
+            padding-top: 2em;
+        }
+    }
+}
