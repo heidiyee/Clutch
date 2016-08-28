@@ -8,7 +8,9 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    bourbon = require("node-bourbon").includePaths,
+    neat = require("node-neat").includePaths;
 
 //error handler for plumber
 function onError(err) {
@@ -20,7 +22,10 @@ function onError(err) {
 gulp.task('sass', function() {
 return gulp.src('_ui/scss/**/*.scss')
     .pipe(plumber({errorHandler: onError}))
-    .pipe(sass())
+    .pipe(sass({
+        includePaths: bourbon,
+        includePaths: neat
+    }))
     .pipe(autoprefixer({
         browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'],
         cascade: false

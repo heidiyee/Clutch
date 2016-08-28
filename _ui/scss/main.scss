@@ -1,8 +1,15 @@
+//grid system
+@import "bourbon";
+@import "neat";
+
 //helpers
 @import "helpers/variables";
 
 //base
 @import "base/reset";
-// @import "base/fonts";
+@import "base/fonts";
+@import "base/global";
 
 //components
+@import "components/nav";
+@import "components/featured";
