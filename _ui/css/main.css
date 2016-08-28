@@ -203,27 +203,48 @@ nav {
   .featured-cs h2 {
     padding: 2em 0;
     font-size: 1.4em; }
-  .featured-cs .case-block {
-    background: url(../assets/data-bg.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    position: relative;
-    padding: 1.5em;
-    height: 260px;
-    margin-bottom: 2em; }
-    .featured-cs .case-block h3 {
-      font-size: 3.6em;
-      padding-bottom: 0.5em; }
-    .featured-cs .case-block p {
-      font-size: 1.4em;
-      color: #aeaeaf; }
-    .featured-cs .case-block a {
-      position: absolute;
-      color: #f9a848;
-      padding: 1em 0;
-      bottom: 0;
-      border: none; }
-  .featured-cs .case-block:nth-child(3) {
-    background: url(../assets/road-bg.jpg);
-    background-size: auto 100%;
-    background-position: center; }
+  .featured-cs .case-studies {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .featured-cs .case-studies::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .featured-cs .case-studies .case-block {
+      background: url(../assets/data-bg.jpg);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 1.5em;
+      height: 260px;
+      margin-bottom: 2em; }
+      .featured-cs .case-studies .case-block h3 {
+        font-size: 3.6em;
+        padding-bottom: 0.5em; }
+      .featured-cs .case-studies .case-block p {
+        font-size: 1.4em;
+        color: #aeaeaf; }
+      .featured-cs .case-studies .case-block a {
+        position: absolute;
+        color: #f9a848;
+        padding: 1em 0;
+        bottom: 0;
+        border: none; }
+    .featured-cs .case-studies .case-block:nth-child(3) {
+      background: url(../assets/road-bg.jpg);
+      background-size: auto 100%;
+      background-position: center; }
+
+.clients {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .clients::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .clients h2 {
+    padding: 2em 0;
+    font-size: 1.4em;
+    color: #050505; }
