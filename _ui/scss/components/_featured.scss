@@ -7,37 +7,41 @@
         font-size: 1.4em;
     }
 
-    .case-block {
-        background: url(../assets/data-bg.jpg);
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        position: relative;
-        padding: 1.5em;
-        height: 260px;
-        margin-bottom: 2em;
+    .case-studies {
+        @include outer-container;
 
-        h3 {
-            font-size: 3.6em;
-            padding-bottom: 0.5em;
+        .case-block {
+            background: url(../assets/data-bg.jpg);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 1.5em;
+            height: 260px;
+            margin-bottom: 2em;
+
+            h3 {
+                font-size: 3.6em;
+                padding-bottom: 0.5em;
+            }
+
+            p {
+                font-size: 1.4em;
+                color: $light-gray;
+            }
+
+            a {
+                position: absolute;
+                color: $orange;
+                padding: 1em 0;
+                bottom: 0;
+                border: none;
+            }
         }
 
-        p {
-            font-size: 1.4em;
-            color: $light-gray;
+        .case-block:nth-child(3) {
+            background: url(../assets/road-bg.jpg);
+            background-size: auto 100%;
+            background-position: center;
         }
-
-        a {
-            position: absolute;
-            color: $orange;
-            padding: 1em 0;
-            bottom: 0;
-            border: none;
-        }
-    }
-
-    .case-block:nth-child(3) {
-        background: url(../assets/road-bg.jpg);
-        background-size: auto 100%;
-        background-position: center;
     }
 }

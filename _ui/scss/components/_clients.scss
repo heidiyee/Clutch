@@ -1,0 +1,36 @@
+.clients {
+    @include outer-container;
+    padding-bottom: 4em;
+
+    h2 {
+        padding: 2em 0;
+        font-size: 1.4em;
+        color: $black;
+    }
+
+    ul {
+        @include span-columns(12);
+
+        li {
+            @include span-columns(6 of 12);
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+
+            img {
+                width: 80%;
+                vertical-align: middle;
+
+            }
+
+            img#att {
+                width: 70%;
+            }
+        }
+
+        li:nth-child(2n) {
+            @include span-columns(6 of 12);
+            @include omega();
+        }
+    }
+}
