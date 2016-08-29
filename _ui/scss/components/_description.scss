@@ -1,0 +1,103 @@
+.description {
+    @include outer-container;
+    color: $dark-gray;
+    padding-top: 2em;
+    padding-bottom: 4em;
+
+    img {
+        @include span-columns(6);
+        padding-bottom: 4em;
+    }
+
+    h2 {
+        clear: both;
+        font-size: 1.4em;
+        padding-bottom: 2em;
+        font-weight: 500;
+    }
+
+    h3 {
+        clear: both;
+        font-size: 3.2em;
+        color: $orange;
+        padding-bottom: 40px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 1.4em;
+        padding-top: 40px;
+        font-weight: 400;
+    }
+}
+
+.description-no-h3 {
+    @extend .description;
+    h2 {
+        font-size: 3.2em;
+        padding-bottom: 40px;
+        color: $orange;
+    }
+}
+
+.description-summary {
+    @extend .description;
+    background: url(../assets/summary-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $white;
+
+    h3 {
+        padding-top: 2.5em;
+        color: $white;
+    }
+
+    h3:first-child {
+        padding-top: 0;
+    }
+
+    p.shift {
+        padding-top: 1.5em;
+        color: #666666;
+    }
+}
+
+.description-gray {
+    @extend .description;
+    background-color: $off-gray;
+}
+
+.description-dark-gray {
+    @extend .description;
+    background-color: $dark-gray;
+    color: $white;
+}
+
+.description-orange {
+    @extend .description;
+    background-color: $orange;
+    padding-bottom: 0;
+
+    img{
+        clear: both;
+    }
+
+    img:nth-child(2) {
+        @include span-columns(2);
+    }
+
+
+    h3 {
+        color: $white;
+        padding-bottom: 20px;
+    }
+
+    p {
+        padding-top: 0;
+        padding-bottom: 4em;
+    }
+
+    p:nth-child(3) {
+        margin-left: 5em;
+    }
+}

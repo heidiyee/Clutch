@@ -8,13 +8,20 @@ nav {
     .nav-bar {
         padding: 2em 2em 15em;
 
-        img {
+        a.home {
             display: inline-block;
-            width: 125px;
+            position: absolute;
+            padding: 0;
+            border: none;
+            z-index: 5;
+
+            img {
+                width: 125px;
+            }
         }
 
         h1, h2 {
-            padding-top: 3em;
+            padding-top: 4.5em;
         }
 
         p {
@@ -85,31 +92,56 @@ nav {
 
         #nav-links {
             position: absolute;
+            background-color: $black;
             left: 100%;
-            width: 100%;
-            height: 100%;
+            width: 0;
+            height: 100vh;
+            top: 0;
+            overflow: hidden;
 
             transition: .25s ease-in-out;
 
             ul {
-                padding: 2em;
+                padding: 9em 0 2em;
 
                 li {
-                    padding: 0.5em 0;
                     font-size: 1.8em;
+                    padding: 0.5em 0;
                     text-align: center;
+
+                    a {
+                        font-size: 1em;
+                        border: none;
+                        padding: inherit;
+                    }
                 }
             }
         }
 
         #nav-links.popup {
-            background-color: $black;
+            width: 100%;
             position: absolute;
             left: 0;
-            width: 100%;
-            height: 100%;
 
-            transition: .25s ease-in-out;
+            transition: all .25s ease-in-out;
         }
     }
+}
+
+nav.focus {
+    background: url(../assets/clutch-focus-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: left -13em center;
+
+    .nav-bar {
+        padding-bottom: 0;
+    }
+}
+
+nav.shift {
+    @extend nav.focus;
+    background: url(../assets/clutch-shift-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left -20em center;
 }
