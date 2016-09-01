@@ -871,3 +871,13 @@ footer {
     font-size: 3.2em; }
   .more .container blockquote {
     padding-bottom: 0; }
+
+@media only screen and (min-width: 800px) {
+  .more .container p, .more .container blockquote, .more .container blockquote {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .more .container p:last-child, .more .container blockquote:last-child, .more .container blockquote:last-child {
+      margin-right: 0; } }
