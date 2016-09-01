@@ -9,29 +9,104 @@ footer {
         padding: 4em 0;
         background-color: $black;
 
-        > * {
+        .container {
             font-size: 16px;
-        }
 
-        a {
-            padding-bottom: 2em;
-        }
-        p {
-            padding-top: 2em;
+            a {
+                padding-bottom: 2em;
+                font-size: 16px;
+            }
+            p {
+                padding-top: 2em;
+            }
+
+            p.twitter {
+                &::after {
+                    @include icon-font("\e902", 0.8em, 1.25em, $white);
+                }
+            }
+
+            p.linkedin {
+                &::after {
+                    @include icon-font("\e901", 0.8em, 1.5em, $white);
+                }
+            }
         }
     }
 
     .bottom-footer {
         background-color: $dark-gray;
-        padding: 4em 0;
+        color: $scary-gray;
 
-        a {
-            padding: 0 0.5em 0;
-            text-decoration: underline;
+        .container {
+            padding: 4em 0;
+            .links {
+                a {
+                    color: $scary-gray;
+                    padding: 0 0.5em 0;
+                    text-decoration: underline;
+                }
+            }
+            .copyright {
+                p {
+                    padding-top: 2em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    footer {
+        .top-footer {
+            .container {
+
+                a {
+                    @include span-columns(4);
+                    padding: 0;
+                    text-align: left;
+                }
+
+                p {
+                    @include span-columns(4);
+                    padding: 0;
+
+                    &:last-child {
+                        text-align: right;
+                    }
+                }
+            }
         }
 
-        p {
-            padding-top: 2em;
+        .bottom-footer {
+            .container {
+                padding: 3em 2em;
+
+                .links {
+                    @include span-columns(3);
+                    display: inline-block;
+                    text-align: left;
+
+                    a {
+                        padding-left: 0;
+                    }
+                }
+
+                .copyright {
+                    @include span-columns(5);
+                    @include shift(4);
+                    text-align: right;
+
+                    p {
+                        display: inline-block;
+                        padding-top: 0;
+                    }
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }

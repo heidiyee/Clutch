@@ -2,7 +2,46 @@
     background-color: $dark-gray;
     font-size: 1.4em;
 
-    p {
-        padding: 2em 0;
+    .container {
+        p {
+            cursor: pointer;
+            padding: 2em 0;
+
+            span {
+                float: right;
+                transform: rotate(0deg);
+                transition: transform 0.4s ease;
+            }
+
+            span.rotate {
+                transform: rotate(-180deg);
+            }
+        }
+
+        .menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.25s ease;
+
+            ul {
+
+                li {
+                    padding: 0.25em 0;
+                    a {
+                        display: block;
+                        padding: inherit;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 2em;
+                }
+            }
+        }
+
+        .menu.open {
+            max-height: 200px;
+            transition: max-height 0.75s ease;
+        }
     }
 }

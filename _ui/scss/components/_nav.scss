@@ -4,144 +4,216 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    padding: 2em 0 15em;
 
-    .nav-bar {
-        padding: 2em 2em 15em;
+    .container {
+        .nav-bar {
 
-        a.home {
-            display: inline-block;
-            position: absolute;
-            padding: 0;
-            border: none;
-            z-index: 5;
-
-            img {
-                width: 125px;
-            }
-        }
-
-        h1, h2 {
-            padding-top: 4.5em;
-        }
-
-        p {
-            padding: 2em 0 5em;
-            font-size: 1.8em;
-        }
-
-        #nav-icon {
-            display: inline-block;
-            position: absolute;
-            right: 2em;
-            width: 3.0em;
-            height: 69px;
-            cursor: pointer;
-            z-index: 4;
-
-            transition: margin-right .5s;
-            transform: rotate(0deg);
-
-            span {
+            a.home {
+                display: inline-block;
                 position: absolute;
-                display: block;
-                width: 100%;
-                height: 5px;
-                background: #fff;
-                left: 0;
+                padding: 0;
+                border: none;
+                z-index: 5;
 
+                img {
+                    width: 125px;
+                }
+            }
+
+            p {
+                padding: 2em 0 5em;
+                font-size: 1.8em;
+            }
+
+            .block {
+                padding-top: 16em;
+
+            }
+
+            #nav-icon {
+                display: inline-block;
+                position: absolute;
+                right: 2em;
+                width: 3.0em;
+                height: 69px;
+                cursor: pointer;
+                z-index: 4;
+
+                transition: margin-right .5s;
                 transform: rotate(0deg);
+
+                span {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 5px;
+                    background: #fff;
+                    left: 0;
+
+                    transform: rotate(0deg);
+                    transition: .25s ease-in-out;
+                }
+
+                span:nth-child(1) {
+                    top: 26px;
+                }
+
+                span:nth-child(2), span:nth-child(3) {
+                    top: 36px;
+                }
+
+                span:nth-child(4) {
+                    top: 46px;
+                }
+            }
+
+            #nav-icon.open {
+                z-index: 4;
+
+                span:nth-child(1) {
+                    top: 36px;
+                    width: 0%;
+                    left: 50%;
+                }
+
+                span:nth-child(2) {
+                    transform: rotate(45deg);
+                }
+
+                span:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+
+                span:nth-child(4) {
+                    top: 36px;
+                    width: 0%;
+                    left: 50%;
+                }
+            }
+
+            #nav-links {
+                position: absolute;
+                background-color: $black;
+                left: 100%;
+                width: 0;
+                height: 100vh;
+                top: 0;
+                overflow: hidden;
+                z-index: 3;
+
                 transition: .25s ease-in-out;
-            }
 
-            span:nth-child(1) {
-                top: 26px;
-            }
+                ul {
+                    padding: 10em 0 2em;
 
-            span:nth-child(2), span:nth-child(3) {
-                top: 36px;
-            }
+                    li {
+                        font-size: 1.8em;
+                        text-align: center;
 
-            span:nth-child(4) {
-                top: 46px;
-            }
-        }
+                        &:hover, &:focus {
+                            background-color: $orange;
+                        }
 
-        #nav-icon.open {
-            z-index: 4;
-
-            span:nth-child(1) {
-                top: 36px;
-                width: 0%;
-                left: 50%;
-            }
-
-            span:nth-child(2) {
-                transform: rotate(45deg);
-            }
-
-            span:nth-child(3) {
-                transform: rotate(-45deg);
-            }
-
-            span:nth-child(4) {
-                top: 36px;
-                width: 0%;
-                left: 50%;
-            }
-        }
-
-        #nav-links {
-            position: absolute;
-            background-color: $black;
-            left: 100%;
-            width: 0;
-            height: 100vh;
-            top: 0;
-            overflow: hidden;
-
-            transition: .25s ease-in-out;
-
-            ul {
-                padding: 9em 0 2em;
-
-                li {
-                    font-size: 1.8em;
-                    padding: 0.5em 0;
-                    text-align: center;
-
-                    a {
-                        font-size: 1em;
-                        border: none;
-                        padding: inherit;
+                        a {
+                            display: block;
+                            font-size: 1em;
+                            padding: 1em 0;
+                            border: none;
+                        }
                     }
                 }
             }
-        }
 
-        #nav-links.popup {
-            width: 100%;
-            position: absolute;
-            left: 0;
+            #nav-links.popup {
+                width: 100%;
+                position: fixed;
+                left: 0;
+                z-index: 3;
 
-            transition: all .25s ease-in-out;
+                transition: all .25s ease-in-out;
+            }
         }
     }
 }
 
+//changing backgrounds for different pages
 nav.focus {
     background: url(../assets/clutch-focus-hero.jpg);
     background-repeat: no-repeat;
     background-position: left -13em center;
+    padding-bottom: 0;
 
-    .nav-bar {
-        padding-bottom: 0;
+    .container {
+        .nav-bar {
+            .block {
+                .columns-right {
+                    p {
+                        padding-top: 1em;
+                    }
+                }
+            }
+        }
     }
 }
 
+//background change for shift page
 nav.shift {
     @extend nav.focus;
     background: url(../assets/clutch-shift-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left -20em center;
+}
+
+//shift background needed to be centered after 700px screen size
+@media only screen and (min-width: 700px) {
+    nav.shift {
+        background-position: center;
+    }
+}
+
+//background change for about page
+nav.about {
+    @extend nav.focus;
+    background: url(../assets/clutch-about-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+//background change for work page
+nav.work {
+    @extend nav.focus;
+    background: url(../assets/clutch-work-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+//same background as work page but nav height decreases
+nav.case-study {
+    @extend nav.work;
+    height: 100px;
+    background-size: 200% 300%;
+}
+
+//background change for contact page
+nav.contact {
+    @extend nav.focus;
+    background: url(../assets/clutch-contact-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+
+@media only screen and (min-width: 400px) {
+    nav {
+        .nav-bar {
+            h1, h2 {
+                width: 360px;
+            }
+        }
+    }
 }

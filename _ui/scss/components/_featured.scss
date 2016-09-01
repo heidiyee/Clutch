@@ -1,15 +1,15 @@
 .featured-cs {
     background-color: $black;
     padding-bottom: 2em;
+    padding-top: 4em;
 
     h2 {
-        padding: 2em 0;
+        padding-bottom: 2em;
         font-size: 1.4em;
         font-weight: 500;
     }
 
-    .case-studies {
-        @include outer-container;
+    .container {
 
         .case-block {
             background: url(../assets/data-bg.jpg);
@@ -44,6 +44,29 @@
             background: url(../assets/road-bg.jpg);
             background-size: auto 100%;
             background-position: center;
+        }
+    }
+}
+
+.featured-cs-white {
+    @extend .featured-cs;
+    background-color: $white;
+
+    h2 {
+        color: $black;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .featured-cs {
+        .container {
+            .case-block {
+                @include span-columns(6 of 12);
+
+                &:nth-child(2n+1) {
+                    @include omega;
+                }
+            }
         }
     }
 }
