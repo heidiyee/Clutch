@@ -1,9 +1,8 @@
 .clients {
-    @include outer-container;
     padding-bottom: 4em;
 
     h2 {
-        padding: 2em 0;
+        padding: 3em 0;
         font-size: 1.4em;
         font-weight: 500;
         color: $black;
@@ -21,7 +20,6 @@
             img {
                 width: 80%;
                 vertical-align: middle;
-
             }
 
             img#att {
@@ -32,6 +30,61 @@
         li:nth-child(2n) {
             @include span-columns(6 of 12);
             @include omega();
+        }
+    }
+}
+
+.clients-off-gray {
+    @extend .clients;
+    background-color: $off-gray;
+}
+
+@media only screen and (min-width: 400px) {
+    .clients {
+        ul {
+            li {
+                img {
+                    width: 140px;
+                }
+
+                img#att {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .clients {
+        ul {
+            li {
+                @include span-columns(4 of 12);
+
+                &:nth-child(2n) {
+                    @include span-columns(4 of 12);
+                }
+
+                &:nth-child(3n+1) {
+                    img {
+                        float: left;
+                        transform: translateY(60%);
+                    }
+                }
+
+                &:nth-child(3n+2) {
+                    @include span-columns(4 of 12);
+                    @include omega;
+                }
+
+                &:nth-child(3n) {
+                    @include omega;
+                    img {
+                        float: right;
+                        transform: translateY(110%);
+                    }
+                }
+            }
         }
     }
 }

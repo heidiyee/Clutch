@@ -1,45 +1,95 @@
 .description {
-    @include outer-container;
     color: $dark-gray;
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 4em;
 
-    img {
-        @include span-columns(6);
-        padding-bottom: 4em;
-    }
+    .container {
 
-    h2 {
-        clear: both;
-        font-size: 1.4em;
-        padding-bottom: 2em;
-        font-weight: 500;
-    }
+        img {
+            @include span-columns(6);
+            padding-bottom: 4em;
+        }
 
-    h3 {
-        clear: both;
-        font-size: 3.2em;
-        color: $orange;
-        padding-bottom: 40px;
-        font-weight: 400;
-    }
+        h2 {
+            clear: both;
+            font-size: 1.4em;
+            padding-top: 1em;
+            padding-bottom: 2em;
+            font-weight: 500;
+        }
 
-    p {
-        font-size: 1.4em;
-        padding-top: 40px;
-        font-weight: 400;
+        h3 {
+            clear: both;
+            font-size: 3.2em;
+            color: $orange;
+            padding-top: 10px;
+            padding-bottom: 40px;
+            font-weight: 400;
+        }
+
+        h4 {
+            font-size: 3.2em;
+            color: $dark-gray;
+            padding-top: 40px;
+
+            &::after {
+                @include icon-font("\e901", 0.5em, 0.8em, $orange);
+            }
+        }
+
+        p {
+            font-size: 1.4em;
+            padding-top: 40px;
+            font-weight: 400;
+
+            a {
+                font-size: 1em;
+                display: inline;
+                border: none;
+                padding: 0;
+                color: $orange;
+            }
+
+            span {
+                font-size: 1.2em;
+                padding-right: 5px;
+            }
+        }
+
+        p.job-description {
+            color: #808080;
+            padding-top: 0;
+        }
+
+        p.extra-padding-bottom {
+            padding-bottom: 4em;
+        }
+
+        p.less-padding-top {
+            padding-top: 0;
+        }
+
+        form {
+            @include span-columns(12);
+            padding: 2em 0 5em;
+
+            input, textarea {
+                @include span-columns(12 of 12);
+                background-color: #eeeeee;
+                border: none;
+                display: block;
+                padding: 1.5em 1em;
+                margin: 0.75em 0;
+            }
+        }
+
+        .center {
+            padding-bottom: 3em;
+        }
     }
 }
 
-.description-no-h3 {
-    @extend .description;
-    h2 {
-        font-size: 3.2em;
-        padding-bottom: 40px;
-        color: $orange;
-    }
-}
-
+//description with bolts and screws
 .description-summary {
     @extend .description;
     background: url(../assets/summary-bg.jpg);
@@ -47,57 +97,145 @@
     background-size: cover;
     color: $white;
 
-    h3 {
-        padding-top: 2.5em;
-        color: $white;
-    }
+    .container {
+        h3 {
+            padding-top: 2.5em;
+            color: $white;
+        }
 
-    h3:first-child {
-        padding-top: 0;
-    }
+        h3:first-child {
+            padding-top: 0;
+        }
 
-    p.shift {
-        padding-top: 1.5em;
-        color: #666666;
+        p {
+            span {
+                font-size: 1.0em;
+                padding-right: 0;
+            }
+        }
+
+        p.bigger-icon {
+            clear: left;
+            padding-top: 1em;
+            padding-bottom: 3em;
+            span {
+                float: left;
+                font-size: 2.5em;
+                padding-right: 0.5em;
+            }
+        }
+
+        p.shift {
+            padding-top: 1.5em;
+            color: $scary-gray;
+        }
+
+        hr {
+            border-top: 1px solid $scary-gray;
+        }
     }
 }
 
+.description-case-study {
+    @extend .description;
+
+    .container {
+        h2 {
+            font-size: 3.2em;
+            color: $orange;
+            padding-bottom: 40px;
+            font-weight: 400;
+        }
+    }
+}
+
+//description and a history background
+.description-history {
+    @extend .description;
+    background: url(../assets/history-bg.jpg);
+    background-position: center;
+    color: $white;
+
+    .container {
+        hr {
+            border-top: 1px solid $white;
+        }
+    }
+}
+
+//Description with off gray background
 .description-gray {
     @extend .description;
     background-color: $off-gray;
 }
 
+//Description with dark gray background
 .description-dark-gray {
     @extend .description;
     background-color: $dark-gray;
     color: $white;
+
+    .container {
+        hr {
+            border-top: 1px solid $white;
+        }
+    }
 }
 
+//Description with orange background
 .description-orange {
     @extend .description;
     background-color: $orange;
     padding-bottom: 0;
 
-    img{
-        clear: both;
+    .container {
+        img{
+            clear: both;
+        }
+
+        img:nth-child(2) {
+            @include span-columns(2);
+        }
+
+
+        h3 {
+            color: $white;
+            padding-bottom: 20px;
+        }
+
+        p {
+            padding-top: 0;
+            padding-bottom: 4em;
+        }
+
+        p:nth-child(3) {
+            margin-left: 5em;
+        }
     }
+}
 
-    img:nth-child(2) {
-        @include span-columns(2);
-    }
+@media only screen and (min-width: 800px) {
+    .description {
+        padding: 4em 0;
+        .container {
 
+            p, p.less-padding-top {
+                padding-top: 1em;
+            }
+            .block {
+                height: 200px;
 
-    h3 {
-        color: $white;
-        padding-bottom: 20px;
-    }
+                .headings {
+                    padding-bottom: 2em;
+                }
 
-    p {
-        padding-top: 0;
-        padding-bottom: 4em;
-    }
+                .columns-right {
 
-    p:nth-child(3) {
-        margin-left: 5em;
+                    p.extra-padding-bottom {
+                        padding-top: 1em;
+                    }
+                }
+            }
+        }
     }
 }

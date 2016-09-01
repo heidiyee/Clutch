@@ -5,7 +5,51 @@
     color: $font-gray;
     font-weight: 300;
 
-    p {
-        font-size: 1.8em;
+    .container {
+
+        h1 {
+            color: $white;
+            padding-bottom: 1em;
+        }
+
+        p {
+            font-size: 1.8em;
+            clear: both;
+        }
+
+        figure {
+            height: 35px;
+            line-height: 1.8em;
+            margin-bottom: 4em;
+
+            img {
+                // @include span-columns(2);
+                width: 35px;
+                height: 100%;
+                margin-right: 1em;
+            }
+            figcaption {
+                display: inline-block;
+                font-size: 1.4em;
+                color: $white;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .info {
+        .container {
+            figure {
+                @include span-columns(4);
+                position: absolute;
+            }
+
+            h1, p {
+                @include span-columns(8);
+                @include shift(4);
+                @include omega();
+            }
+        }
     }
 }
