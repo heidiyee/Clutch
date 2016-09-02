@@ -6,7 +6,7 @@
     .container {
 
         img {
-            @include span-columns(6);
+            width: 150px;
             padding-bottom: 4em;
         }
 
@@ -86,6 +86,10 @@
         .center {
             padding-bottom: 3em;
         }
+
+        .block {
+            clear: both;
+        }
     }
 }
 
@@ -136,6 +140,7 @@
     }
 }
 
+//descript with case study blocks
 .description-case-study {
     @extend .description;
 
@@ -214,6 +219,8 @@
     }
 }
 
+
+//tinkering with spacing with desktop layout
 @media only screen and (min-width: 800px) {
     .description {
         padding: 4em 0;
@@ -222,6 +229,11 @@
             p, p.less-padding-top {
                 padding-top: 1em;
             }
+
+            img {
+                @include span-columns(6);
+            }
+
             .block {
                 height: 200px;
 
@@ -235,6 +247,89 @@
                         padding-top: 1em;
                     }
                 }
+            }
+        }
+    }
+}
+
+//descript with layout for customer advantage section
+.description-orange-advantage {
+    @extend .description-orange;
+    .container {
+        .first-block {
+            display: block;
+            img {
+                width: 50px;
+                float: left;
+                padding-right: 2em;
+            }
+
+            p {
+                color: $white;
+                padding-bottom: 0;
+            }
+        }
+
+        .block {
+            img, h3 {
+                margin: 0 calc((100% - 150px)/2);
+            }
+
+            img {
+                padding-bottom: 1em;
+            }
+
+            img.hidden {
+                display: none;
+            }
+        }
+
+        p:nth-child(3) {
+            margin: 0;
+        }
+    }
+}
+
+//media query for customer advantage section only
+@media only screen and (min-width: 800px) {
+    .description-orange-advantage {
+        .container {
+
+            .first-block {
+                @include span-columns(12);
+
+                p {
+                    padding-top: 0;
+                }
+            }
+
+                .block {
+                    @include span-columns(3);
+                    clear: none;
+                    height: auto;
+
+                    img, h3 {
+                        margin: 0;
+                    }
+
+                    .images {
+                        position: relative;
+                        display: inline-block;
+
+                        img {
+                            display: inline-block;
+                            width: 120px;
+                        }
+
+                        img.hidden {
+                            position: absolute;
+                            height: 40px;
+                            width: auto;
+                            padding-left: 2em;
+                            bottom: 0;
+                        }
+                    }
+
             }
         }
     }

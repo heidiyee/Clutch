@@ -1,0 +1,7 @@
+@function vertical-spacing($container-height, $asset-height) {
+    @return ($container-height - $asset-height)/2;
+}
+
+@function remaining-height($container-height, $sec-height) {
+    @return ($container-height - $sec-height);
+}

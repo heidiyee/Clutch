@@ -217,3 +217,38 @@ nav.contact {
         }
     }
 }
+
+@media only screen and (min-width: 800px) {
+    nav {
+        .container {
+            .nav-bar {
+                #nav-icon {
+                    display: none;
+                }
+
+                #nav-links {
+                    @include span-columns(8);
+                    @include shift(4);
+                    height: auto;
+                    left: 0;
+                    background-color: transparent;
+                    position: static;
+
+                    ul {
+                        padding-top: 1.0em;
+                        li {
+                            display: inline-block;
+                            width: 90px;
+                            text-align: left;
+
+                            &:hover, &:focus {
+                                background-color: transparent;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

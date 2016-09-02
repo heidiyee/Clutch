@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 140 35.5" style="enable-background:new 0 0 140 35.5;" xml:space="preserve">
+	 viewBox="0 0 140 143" style="enable-background:new 0 0 140 143;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 </style>
-<g>
-	<rect x="1" y="1" class="st0" width="138" height="33.5"/>
-	<rect x="120.9" y="18.8" class="st0" width="8.6" height="15.7"/>
-	<polyline class="st0" points="1,18.8 112.3,18.8 112.3,26.7 1,26.7 	"/>
-	<g id="XMLID_40_">
-		<line id="XMLID_2_" class="st0" x1="8.4" y1="18.8" x2="8.4" y2="26.8"/>
-		<line id="XMLID_13_" class="st0" x1="16.4" y1="18.8" x2="16.4" y2="26.8"/>
-		<line id="XMLID_12_" class="st0" x1="24.4" y1="18.8" x2="24.4" y2="26.8"/>
-		<line id="XMLID_11_" class="st0" x1="32.5" y1="18.8" x2="32.5" y2="26.8"/>
-		<line id="XMLID_10_" class="st0" x1="40.5" y1="18.8" x2="40.5" y2="26.8"/>
-		<line id="XMLID_9_" class="st0" x1="48.5" y1="18.8" x2="48.5" y2="26.8"/>
-		<line id="XMLID_8_" class="st0" x1="56.6" y1="18.8" x2="56.6" y2="26.8"/>
-		<line id="XMLID_7_" class="st0" x1="64.6" y1="18.8" x2="64.6" y2="26.8"/>
-		<line id="XMLID_6_" class="st0" x1="72.6" y1="18.8" x2="72.6" y2="26.8"/>
-		<line id="XMLID_5_" class="st0" x1="80.7" y1="18.8" x2="80.7" y2="26.8"/>
-		<line id="XMLID_4_" class="st0" x1="88.7" y1="18.8" x2="88.7" y2="26.8"/>
-		<line id="XMLID_3_" class="st0" x1="96.7" y1="18.8" x2="96.7" y2="26.8"/>
-		<line id="XMLID_1_" class="st0" x1="104.8" y1="18.8" x2="104.8" y2="26.8"/>
+<g id="XMLID_41_">
+	<rect id="XMLID_62_" x="1" y="107.6" class="st0" width="138" height="33.5"/>
+	<rect id="XMLID_61_" x="120.9" y="125.5" class="st0" width="8.6" height="15.7"/>
+	<polyline id="XMLID_60_" class="st0" points="1,125.5 112.3,125.5 112.3,133.3 1,133.3 	"/>
+	<g id="XMLID_42_">
+		<line id="XMLID_2_" class="st0" x1="8.4" y1="125.5" x2="8.4" y2="133.5"/>
+		<line id="XMLID_13_" class="st0" x1="16.4" y1="125.5" x2="16.4" y2="133.5"/>
+		<line id="XMLID_12_" class="st0" x1="24.4" y1="125.5" x2="24.4" y2="133.5"/>
+		<line id="XMLID_11_" class="st0" x1="32.5" y1="125.5" x2="32.5" y2="133.5"/>
+		<line id="XMLID_10_" class="st0" x1="40.5" y1="125.5" x2="40.5" y2="133.5"/>
+		<line id="XMLID_9_" class="st0" x1="48.5" y1="125.5" x2="48.5" y2="133.5"/>
+		<line id="XMLID_8_" class="st0" x1="56.6" y1="125.5" x2="56.6" y2="133.5"/>
+		<line id="XMLID_7_" class="st0" x1="64.6" y1="125.5" x2="64.6" y2="133.5"/>
+		<line id="XMLID_6_" class="st0" x1="72.6" y1="125.5" x2="72.6" y2="133.5"/>
+		<line id="XMLID_5_" class="st0" x1="80.7" y1="125.5" x2="80.7" y2="133.5"/>
+		<line id="XMLID_4_" class="st0" x1="88.7" y1="125.5" x2="88.7" y2="133.5"/>
+		<line id="XMLID_3_" class="st0" x1="96.7" y1="125.5" x2="96.7" y2="133.5"/>
+		<line id="XMLID_1_" class="st0" x1="104.8" y1="125.5" x2="104.8" y2="133.5"/>
 	</g>
 </g>
 </svg>
