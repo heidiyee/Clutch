@@ -540,10 +540,14 @@ footer {
   footer a {
     border: none; }
   footer .top-footer {
-    padding: 4em 0;
     background-color: #050505; }
     footer .top-footer .container {
+      padding: 4em 0;
+      position: relative;
       font-size: 16px; }
+      footer .top-footer .container img {
+        position: absolute;
+        opacity: 0; }
       footer .top-footer .container a {
         padding-bottom: 2em;
         font-size: 16px; }
@@ -593,29 +597,36 @@ footer {
 
 @media only screen and (min-width: 800px) {
   footer .top-footer {
-    background: url(../assets/clutch-footer.svg);
-    background-color: #050505;
-    background-repeat: no-repeat;
-    background-position: left -30% center; }
-    footer .top-footer .container a {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      padding: 0;
-      text-align: left; }
-      footer .top-footer .container a:last-child {
-        margin-right: 0; }
-    footer .top-footer .container p, footer .top-footer .more .container blockquote, .more footer .top-footer .container blockquote {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      padding: 0; }
-      footer .top-footer .container p:last-child, footer .top-footer .more .container blockquote:last-child, .more footer .top-footer .container blockquote:last-child {
-        margin-right: 0; }
-      footer .top-footer .container p:last-child, footer .top-footer .more .container blockquote:last-child, .more footer .top-footer .container blockquote:last-child {
-        text-align: right; }
+    position: relative; }
+    footer .top-footer .container {
+      padding: 3em 0; }
+      footer .top-footer .container img {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        opacity: 1;
+        left: -9em;
+        top: 0;
+        height: 100%; }
+        footer .top-footer .container img:last-child {
+          margin-right: 0; }
+      footer .top-footer .container a {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        padding: 0; }
+        footer .top-footer .container a:last-child {
+          margin-right: 0; }
+      footer .top-footer .container p, footer .top-footer .more .container blockquote, .more footer .top-footer .container blockquote {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        padding: 0; }
+        footer .top-footer .container p:last-child, footer .top-footer .more .container blockquote:last-child, .more footer .top-footer .container blockquote:last-child {
+          margin-right: 0; }
   footer .bottom-footer .container {
     padding: 3em 2em; }
     footer .bottom-footer .container .links {
@@ -716,13 +727,34 @@ footer {
       padding: 0.25em 0; }
       .drop-menu .container .menu ul li a {
         display: block;
-        padding: inherit; }
+        padding: inherit;
+        font-size: 14px; }
     .drop-menu .container .menu ul:last-child {
       margin-bottom: 2em; }
   .drop-menu .container .menu.open {
     max-height: 200px;
     -webkit-transition: max-height 0.75s ease;
     transition: max-height 0.75s ease; }
+
+@media only screen and (min-width: 800px) {
+  .drop-menu .container p, .drop-menu .more .container blockquote, .more .drop-menu .container blockquote {
+    display: none; }
+  .drop-menu .container .menu {
+    max-height: 300px; }
+    .drop-menu .container .menu ul {
+      margin: 0; }
+      .drop-menu .container .menu ul li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 18.96686%;
+        display: inline-block;
+        text-align: center;
+        padding: 0; }
+        .drop-menu .container .menu ul li:last-child {
+          margin-right: 0; }
+        .drop-menu .container .menu ul li a {
+          padding: 2em 0; } }
 
 .description, .description-summary, .description-case-study, .description-history, .description-gray, .description-dark-gray, .description-orange, .description-orange-advantage {
   color: #333333;
