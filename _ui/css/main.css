@@ -729,8 +729,8 @@ footer {
         display: block;
         padding: inherit;
         font-size: 14px; }
-    .drop-menu .container .menu ul:last-child {
-      margin-bottom: 2em; }
+      .drop-menu .container .menu ul li:last-child {
+        margin-bottom: 2em; }
   .drop-menu .container .menu.open {
     max-height: 200px;
     -webkit-transition: max-height 0.75s ease;
@@ -740,21 +740,37 @@ footer {
   .drop-menu .container p, .drop-menu .more .container blockquote, .more .drop-menu .container blockquote {
     display: none; }
   .drop-menu .container .menu {
-    max-height: 300px; }
+    max-height: 300px;
+    overflow: visible; }
     .drop-menu .container .menu ul {
       margin: 0; }
       .drop-menu .container .menu ul li {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 18.96686%;
+        width: 18.11388%;
         display: inline-block;
-        text-align: center;
-        padding: 0; }
+        padding: 0 2.5%;
+        position: relative; }
         .drop-menu .container .menu ul li:last-child {
           margin-right: 0; }
         .drop-menu .container .menu ul li a {
-          padding: 2em 0; } }
+          padding: 2em 0;
+          text-align: center; }
+        .drop-menu .container .menu ul li:hover::after, .drop-menu .container .menu ul li:focus::after {
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid #333333;
+          content: "";
+          position: absolute;
+          top: 100%;
+          width: 0;
+          height: 0;
+          left: 43%;
+          display: block;
+          z-index: 5; }
+        .drop-menu .container .menu ul li:last-child {
+          margin-bottom: 0; } }
 
 .description, .description-summary, .description-case-study, .description-history, .description-gray, .description-dark-gray, .description-orange, .description-orange-advantage {
   color: #333333;
