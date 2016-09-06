@@ -222,6 +222,18 @@ nav.contact {
     nav {
         .container {
             .nav-bar {
+                .block {
+                    h1, h2 {
+                        width: 650px;
+                        font-size: 6.4em;
+                    }
+
+                    p {
+                        font-size: 3em;
+                        padding-bottom: 2em;
+                    }
+                }
+
                 #nav-icon {
                     display: none;
                 }

@@ -103,14 +103,19 @@
     color: $white;
 
     .container {
-        h3 {
-            padding-top: 2.5em;
-            color: $white;
+        .block {
+            .headings {
+                h3 {
+                    padding-top: 2.5em;
+                    color: $white;
+                }
+
+                h3:first-child {
+                    padding-top: 0.5em;
+                }
+            }
         }
 
-        h3:first-child {
-            padding-top: 0;
-        }
 
         p {
             span {
@@ -137,6 +142,20 @@
 
         hr {
             border-top: 1px solid $scary-gray;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .description-summary {
+        .container {
+            .block {
+                .headings {
+                    h3 {
+                        padding-top: 10px;
+                    }
+                }
+            }
         }
     }
 }
@@ -271,6 +290,7 @@
             display: block;
             img {
                 width: 50px;
+                height: 80px;
                 float: left;
                 padding-right: 2em;
             }
@@ -314,33 +334,32 @@
                 }
             }
 
-                .block {
-                    @include span-columns(3);
-                    clear: none;
-                    height: auto;
+            .block {
+                @include span-columns(3);
+                clear: none;
+                height: auto;
 
-                    img, h3 {
-                        margin: 0;
-                    }
+                img, h3 {
+                    margin: 0;
+                }
 
-                    .images {
-                        position: relative;
+                .images {
+                    position: relative;
+                    display: inline-block;
+
+                    img {
                         display: inline-block;
-
-                        img {
-                            display: inline-block;
-                            width: 120px;
-                        }
-
-                        img.hidden {
-                            position: absolute;
-                            height: 40px;
-                            width: auto;
-                            padding-left: 2em;
-                            bottom: 0;
-                        }
+                        width: 120px;
                     }
 
+                    img.hidden {
+                        position: absolute;
+                        height: 40px;
+                        width: auto;
+                        padding-left: 2em;
+                        bottom: 0;
+                    }
+                }
             }
         }
     }

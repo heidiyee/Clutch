@@ -5,21 +5,22 @@ var menuToggle = function() {
     });
 };
 
-
 var navScroll = function() {
     $('a[href*="#"]:not([href="#"])').on('click', function (event) {
         event.preventDefault();
+
         $(this).parent().siblings().removeClass('selected');
-        // if (!$(this).parent.hasClass('selected')) {
-        //
-        // }
         var target = $(this.getAttribute('href'));
         if (target.length) {
+
+            if ($('#menu').is(':visible')) {
+                $('.menu').removeClass('open');
+                $('.icon-down-arrow').removeClass('rotate');
+            }
             $(this).parent().addClass('selected');
             $('html, body').stop().animate({
                 scrollTop: target.offset().top - 70
             }, 700);
-            return false;
         }
     });
 };

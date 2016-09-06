@@ -18,7 +18,16 @@
             }
         }
 
+        #menu {
+            position: relative;
+        }
+
         .menu {
+            background-color: $dark-gray;
+            width: 100%;
+            left: 0;
+            padding-left: 2em;
+            position: absolute;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.25s ease;
@@ -72,8 +81,10 @@
             }
 
             .menu {
+                position: static;
                 max-height: 300px;
                 overflow: visible;
+                padding-left: 0;
 
                 ul {
                     margin: 0;

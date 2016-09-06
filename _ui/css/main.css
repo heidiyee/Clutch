@@ -386,6 +386,12 @@ nav.contact {
     width: 360px; } }
 
 @media only screen and (min-width: 800px) {
+  nav .container .nav-bar .block h1, nav .container .nav-bar .block h2 {
+    width: 650px;
+    font-size: 6.4em; }
+  nav .container .nav-bar .block p {
+    font-size: 3em;
+    padding-bottom: 2em; }
   nav .container .nav-bar #nav-icon {
     display: none; }
   nav .container .nav-bar #nav-links {
@@ -793,7 +799,14 @@ footer {
       -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
       transform: rotate(-180deg); }
+  .drop-menu .container #menu {
+    position: relative; }
   .drop-menu .container .menu {
+    background-color: #333333;
+    width: 100%;
+    left: 0;
+    padding-left: 2em;
+    position: absolute;
     max-height: 0;
     overflow: hidden;
     -webkit-transition: max-height 0.25s ease;
@@ -824,8 +837,10 @@ footer {
   .drop-menu .container p {
     display: none; }
   .drop-menu .container .menu {
+    position: static;
     max-height: 300px;
-    overflow: visible; }
+    overflow: visible;
+    padding-left: 0; }
     .drop-menu .container .menu ul {
       margin: 0;
       height: auto;
@@ -998,11 +1013,11 @@ footer {
   background-position: center;
   background-size: cover;
   color: #fff; }
-  .description-summary .container h3 {
+  .description-summary .container .block .headings h3 {
     padding-top: 2.5em;
     color: #fff; }
-  .description-summary .container h3:first-child {
-    padding-top: 0; }
+  .description-summary .container .block .headings h3:first-child {
+    padding-top: 0.5em; }
   .description-summary .container p span {
     font-size: 1.0em;
     padding-right: 0; }
@@ -1019,6 +1034,10 @@ footer {
     color: #666666; }
   .description-summary .container hr {
     border-top: 1px solid #666666; }
+
+@media only screen and (min-width: 800px) {
+  .description-summary .container .block .headings h3 {
+    padding-top: 10px; } }
 
 .description-case-study .container h2 {
   font-size: 3.2em;
@@ -1092,6 +1111,7 @@ footer {
   display: block; }
   .description-orange-advantage .container .first-block img {
     width: 50px;
+    height: 80px;
     float: left;
     padding-right: 2em; }
   .description-orange-advantage .container .first-block p {
