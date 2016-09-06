@@ -3,7 +3,7 @@
     text-align: center;
     color: $white;
     padding-bottom: 0;
-    
+
     .container {
         padding-bottom: 10em;
 
@@ -26,6 +26,7 @@
             p, blockquote {
                 @include span-columns(8);
                 @include shift(2);
+                float: none;
             }
 
         }

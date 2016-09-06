@@ -1067,7 +1067,9 @@ footer {
   .description, .description-summary, .description-case-study, .description-history, .description-gray, .description-dark-gray, .description-orange, .description-orange-advantage {
     padding-top: 0; }
     .description .container, .description-summary .container, .description-case-study .container, .description-history .container, .description-gray .container, .description-dark-gray .container, .description-orange .container, .description-orange-advantage .container {
-      padding: 4em 0; }
+      padding-top: 4em; }
+      .description .container h4, .description-summary .container h4, .description-case-study .container h4, .description-history .container h4, .description-gray .container h4, .description-dark-gray .container h4, .description-orange .container h4, .description-orange-advantage .container h4 {
+        padding-top: 14px; }
       .description .container p, .description-summary .container p, .description-case-study .container p, .description-history .container p, .description-gray .container p, .description-dark-gray .container p, .description-orange .container p, .description-orange-advantage .container p, .description .container p.less-padding-top, .description-summary .container p.less-padding-top, .description-case-study .container p.less-padding-top, .description-history .container p.less-padding-top, .description-gray .container p.less-padding-top, .description-dark-gray .container p.less-padding-top, .description-orange .container p.less-padding-top, .description-orange-advantage .container p.less-padding-top {
         padding-top: 1em; }
       .description .container img, .description-summary .container img, .description-case-study .container img, .description-history .container img, .description-gray .container img, .description-dark-gray .container img, .description-orange .container img, .description-orange-advantage .container img {
@@ -1082,7 +1084,9 @@ footer {
         .description .container .block .headings, .description-summary .container .block .headings, .description-case-study .container .block .headings, .description-history .container .block .headings, .description-gray .container .block .headings, .description-dark-gray .container .block .headings, .description-orange .container .block .headings, .description-orange-advantage .container .block .headings {
           padding-bottom: 2em; }
         .description .container .block .columns-right p.extra-padding-bottom, .description-summary .container .block .columns-right p.extra-padding-bottom, .description-case-study .container .block .columns-right p.extra-padding-bottom, .description-history .container .block .columns-right p.extra-padding-bottom, .description-gray .container .block .columns-right p.extra-padding-bottom, .description-dark-gray .container .block .columns-right p.extra-padding-bottom, .description-orange .container .block .columns-right p.extra-padding-bottom, .description-orange-advantage .container .block .columns-right p.extra-padding-bottom {
-          padding-top: 1em; } }
+          padding-top: 1em; }
+      .description .container form, .description-summary .container form, .description-case-study .container form, .description-history .container form, .description-gray .container form, .description-dark-gray .container form, .description-orange .container form, .description-orange-advantage .container form {
+        padding-top: 0; } }
 
 .description-orange-advantage .container .first-block {
   display: block; }
@@ -1162,6 +1166,7 @@ footer {
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
-    margin-left: 17.05961%; }
+    margin-left: 17.05961%;
+    float: none; }
     .more .container p:last-child, .more .container blockquote:last-child {
       margin-right: 0; } }

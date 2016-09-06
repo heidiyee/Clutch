@@ -225,9 +225,13 @@
 @media only screen and (min-width: 800px) {
     .description {
         padding-top: 0;
-        
+
         .container {
-            padding: 4em 0;
+            padding-top: 4em;
+
+            h4 {
+                padding-top: 14px;
+            }
 
             p, p.less-padding-top {
                 padding-top: 1em;
@@ -250,6 +254,10 @@
                         padding-top: 1em;
                     }
                 }
+            }
+
+            form {
+                padding-top: 0;
             }
         }
     }
