@@ -6,11 +6,18 @@ footer {
     }
 
     .top-footer {
-        padding: 4em 0;
         background-color: $black;
 
         .container {
+            padding: 4em 0;
+            position: relative;
             font-size: 16px;
+
+
+            img {
+                position: absolute;
+                opacity: 0;
+            }
 
             a {
                 padding-bottom: 2em;
@@ -57,23 +64,31 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
+
     footer {
         .top-footer {
+            position: relative;
+
             .container {
+                padding: 3em 0;
+                
+                img {
+                    @include span-columns(6);
+                    opacity: 1;
+                    left: -9em;
+                    top: 0;
+                    height: 100%;
+                }
 
                 a {
                     @include span-columns(4);
                     padding: 0;
-                    text-align: left;
                 }
 
                 p {
                     @include span-columns(4);
                     padding: 0;
 
-                    &:last-child {
-                        text-align: right;
-                    }
                 }
             }
         }

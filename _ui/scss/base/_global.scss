@@ -91,3 +91,9 @@ hr {
 div.block {
     display: block;
 }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
