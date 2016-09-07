@@ -264,6 +264,7 @@ nav {
     display: inline-block;
     position: absolute;
     right: 2em;
+    top: 2.6em;
     width: 3.0em;
     height: 69px;
     cursor: pointer;
