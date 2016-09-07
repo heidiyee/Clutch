@@ -484,6 +484,10 @@ nav.contact {
         -ms-transform: translateX(calc(90px * 5));
         transform: translateX(calc(90px * 5)); } }
 
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  nav .container .nav-bar a.home img {
+    padding-top: 1em; } }
+
 .featured-cs, .featured-cs-white {
   background-color: #050505;
   padding-bottom: 2em;

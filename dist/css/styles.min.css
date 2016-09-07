@@ -264,6 +264,7 @@ nav {
     display: inline-block;
     position: absolute;
     right: 2em;
+    top: 2.6em;
     width: 3.0em;
     height: 69px;
     cursor: pointer;
@@ -482,6 +483,10 @@ nav.contact {
         -webkit-transform: translateX(-webkit-calc(90px * 5));
         -ms-transform: translateX(calc(90px * 5));
         transform: translateX(calc(90px * 5)); } }
+
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  nav .container .nav-bar a.home img {
+    padding-top: 1em; } }
 
 .featured-cs, .featured-cs-white {
   background-color: #050505;

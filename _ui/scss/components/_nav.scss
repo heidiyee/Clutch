@@ -334,3 +334,18 @@ nav.contact {
         }
     }
 }
+
+//IE10 and over go here: stackoverflow answer --- Create a media query using -ms-high-contrast, in which you place your IE 10 and 11-specific CSS styles. Because -ms-high-contrast is Microsoft-specific (and only available in IE 10+), it will only be parsed in Internet Explorer 10 and greater
+@media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+     nav {
+         .container {
+             .nav-bar {
+                 a.home {
+                     img {
+                         padding-top: 1em;
+                     }
+                 }
+             }
+         }
+     }
+}
