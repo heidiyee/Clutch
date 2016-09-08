@@ -1,0 +1,14 @@
+nav .container .nav-bar a.home img {
+    height: 80px;
+}
+
+nav .container .nav-bar #nav-links ul li:last-child {
+    display: none;
+}
+
+hr {
+    text-align: left;
+    border-left: 0px;
+    border-right: 0px;
+    height: 0;
+}
