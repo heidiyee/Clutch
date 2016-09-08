@@ -6,6 +6,11 @@
     top: -999999px;
 }
 
+html, body {
+    overflow-x: hidden;
+    margin-top: 0;
+}
+
 body {
     font-family: "Pangram", sans-serif;
     font-weight: 400;

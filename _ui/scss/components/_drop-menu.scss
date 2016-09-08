@@ -1,6 +1,8 @@
 .drop-menu {
     background-color: $dark-gray;
     font-size: 1.4em;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
 
     .container {
         p {
@@ -109,7 +111,7 @@
 
                         }
                     }
-                    
+
                     > li:last-child {
                         position: absolute;
                         top: 100%;
