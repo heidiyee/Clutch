@@ -8,12 +8,15 @@ nav {
 
     .container {
         .nav-bar {
+            position: relative;
+
             a.home {
                 display: inline-block;
                 position: absolute;
                 padding: 0;
                 border: none;
                 z-index: 5;
+                left: 0;
 
                 img {
                     padding-top: 2em;
@@ -265,19 +268,9 @@ nav.contact {
                             &:hover, &:focus {
                                 background-color: transparent;
                             }
-                        }
 
-                        &.selected {
-                            position: relative;
-
-                            &::after {
-                                height: 5px;
-                                background-color: $white;
-                                width: 75px;
-                                position: absolute;
-                                content: "";
-                                left: 0;
-                                top: 0;
+                            &.selected {
+                                position: relative;
                             }
                         }
 
@@ -289,8 +282,14 @@ nav.contact {
                             top: 0;
                             left: -90px;
                             background-color: $white;
-                            transition: transform .25s;
+                            transition: transform 0.25s linear;
                             z-index: 0;
+                        }
+
+                        &::after {
+                            clear: both;
+                            content: "";
+                            display: table;
                         }
 
                         li:nth-child(1):hover ~ li:last-child {
@@ -342,10 +341,21 @@ nav.contact {
              .nav-bar {
                  a.home {
                      img {
-                         padding-top: 1em;
+                         height: 80px;
+                     }
+                 }
+
+                 #nav-links {
+                     ul {
+                         li:last-child {
+                             display: none;
+                         }
                      }
                  }
              }
          }
      }
 }
+
+// Internet Explorer 11+
+_:-ms-fullscreen, :root .selector { property:value; }

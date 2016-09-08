@@ -107,21 +107,9 @@
                         &.selected {
                             position: relative;
 
-                            // &::after {
-                            //     border-left: 10px solid transparent;
-                            //     border-right: 10px solid transparent;
-                            //     border-top: 10px solid $dark-gray;
-                            //     content: "";
-                            //     position: absolute;
-                            //     top: 100%;
-                            //     width: 0;
-                            //     height: 0;
-                            //     left: calc(50% - 10px);
-                            //     display: block;
-                            //     z-index: 5;
-                            // }
                         }
                     }
+                    
                     > li:last-child {
                         position: absolute;
                         top: 100%;

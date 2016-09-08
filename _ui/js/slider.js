@@ -1,7 +1,8 @@
 var menuToggle = function() {
-    $('#menu').click(function() {
+    $('#menu').click(function(e) {
         $('.menu').toggleClass('open');
         $('.icon-down-arrow').toggleClass('rotate');
+        console.log('working');
     });
 };
 
@@ -19,11 +20,15 @@ var navScroll = function() {
             }
             $(this).parent().addClass('selected');
             $('html, body').stop().animate({
-                scrollTop: target.offset().top - 70
+                scrollTop: target.offset().top - $('.drop-menu').height() + 5
             }, 700);
         }
     });
 };
+
+// $(document).ready(function(){
+//     $('input, textarea').placeholder();
+// });
 
 $(document).ready(menuToggle);
 $(document).ready(navScroll);

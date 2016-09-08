@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html data-placeholder-focus="false">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>Contact|Clutch</title>
 
         <link rel="stylesheet" href="css/styles.min.css">
+        <!--[if IE]>
+            <link rel="stylesheet" href="css/ie-only.css" />
+        <![endif]-->
     </head>
     <body>
         <nav class="contact">
@@ -21,7 +24,7 @@
                     </div>
                     <div id="nav-links">
                         <ul>
-                            <li><a href="about.html">About</a></li><li><a href="shift.html">Shift</a></li><li><a href="focus.html">Focus</a></li><li><a href="work.html">Work</a></li><li class="selected"><a href="contact.html">Contact</a></li><li><!-- hello--></li>
+                            <li><a href="about.html">About</a></li><li><a href="shift.html">Shift</a></li><li><a href="focus.html">Focus</a></li><li><a href="work.html">Work</a></li><li id="selected" class="selected"><a href="contact.html">Contact</a></li><li><!-- hello--></li>
                         </ul>
                     </div>
                     <div class="block">
@@ -178,6 +181,9 @@
             </div>
         </footer>
         <script src="js/main.min.js"></script>
+        <script src="_ui/js/placeholder.js">
+
+        </script>
     </body>
 
 
