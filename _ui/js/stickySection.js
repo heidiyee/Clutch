@@ -1,10 +1,14 @@
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
-    var sticky_anchor = $('#sticky-anchor');
+    var sticky_anchor;
     var div_top;
 
-    if (sticky_anchor.length) {
-        div_top =  sticky_anchor.offset().top
+    if ($(".drop-menu").length) {
+        sticky_anchor = $('#sticky-anchor');
+
+        if (sticky_anchor.length) {
+            div_top =  sticky_anchor.offset().top
+        }
     }
 
     if (window_top > div_top) {
