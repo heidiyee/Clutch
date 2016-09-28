@@ -16,5 +16,3 @@ $(window).on('scroll', function () {
         }
     });
 });
-
-// $(document).ready(highlightSection);

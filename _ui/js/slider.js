@@ -2,7 +2,6 @@ var menuToggle = function() {
     $('#menu').click(function(e) {
         $('.menu').toggleClass('open');
         $('.icon-down-arrow').toggleClass('rotate');
-        console.log('working');
     });
 };
 
@@ -26,9 +25,6 @@ var navScroll = function() {
     });
 };
 
-// $(document).ready(function(){
-//     $('input, textarea').placeholder();
-// });
 
 $(document).ready(menuToggle);
 $(document).ready(navScroll);

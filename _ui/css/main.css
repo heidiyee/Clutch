@@ -450,41 +450,41 @@ nav.contact {
         content: "";
         display: table; }
       nav .container .nav-bar #nav-links ul li:nth-child(1):hover ~ li:last-child {
-        -webkit-transform: translateX(90px) !important;
-        -ms-transform: translateX(90px) !important;
-        transform: translateX(90px) !important; }
+        -webkit-transform: translateX(90px);
+        -ms-transform: translateX(90px);
+        transform: translateX(90px); }
       nav .container .nav-bar #nav-links ul li:nth-child(1).selected ~ li:last-child {
         -webkit-transform: translateX(90px);
         -ms-transform: translateX(90px);
         transform: translateX(90px); }
       nav .container .nav-bar #nav-links ul li:nth-child(2):hover ~ li:last-child {
-        -webkit-transform: translateX(-webkit-calc(90px * 2)) !important;
-        -ms-transform: translateX(calc(90px * 2)) !important;
-        transform: translateX(calc(90px * 2)) !important; }
+        -webkit-transform: translateX(-webkit-calc(90px * 2));
+        -ms-transform: translateX(calc(90px * 2));
+        transform: translateX(calc(90px * 2)); }
       nav .container .nav-bar #nav-links ul li:nth-child(2).selected ~ li:last-child {
         -webkit-transform: translateX(-webkit-calc(90px * 2));
         -ms-transform: translateX(calc(90px * 2));
         transform: translateX(calc(90px * 2)); }
       nav .container .nav-bar #nav-links ul li:nth-child(3):hover ~ li:last-child {
-        -webkit-transform: translateX(-webkit-calc(90px * 3)) !important;
-        -ms-transform: translateX(calc(90px * 3)) !important;
-        transform: translateX(calc(90px * 3)) !important; }
+        -webkit-transform: translateX(-webkit-calc(90px * 3));
+        -ms-transform: translateX(calc(90px * 3));
+        transform: translateX(calc(90px * 3)); }
       nav .container .nav-bar #nav-links ul li:nth-child(3).selected ~ li:last-child {
         -webkit-transform: translateX(-webkit-calc(90px * 3));
         -ms-transform: translateX(calc(90px * 3));
         transform: translateX(calc(90px * 3)); }
       nav .container .nav-bar #nav-links ul li:nth-child(4):hover ~ li:last-child {
-        -webkit-transform: translateX(-webkit-calc(90px * 4)) !important;
-        -ms-transform: translateX(calc(90px * 4)) !important;
-        transform: translateX(calc(90px * 4)) !important; }
+        -webkit-transform: translateX(-webkit-calc(90px * 4));
+        -ms-transform: translateX(calc(90px * 4));
+        transform: translateX(calc(90px * 4)); }
       nav .container .nav-bar #nav-links ul li:nth-child(4).selected ~ li:last-child {
         -webkit-transform: translateX(-webkit-calc(90px * 4));
         -ms-transform: translateX(calc(90px * 4));
         transform: translateX(calc(90px * 4)); }
       nav .container .nav-bar #nav-links ul li:nth-child(5):hover ~ li:last-child {
-        -webkit-transform: translateX(-webkit-calc(90px * 5)) !important;
-        -ms-transform: translateX(calc(90px * 5)) !important;
-        transform: translateX(calc(90px * 5)) !important; }
+        -webkit-transform: translateX(-webkit-calc(90px * 5));
+        -ms-transform: translateX(calc(90px * 5));
+        transform: translateX(calc(90px * 5)); }
       nav .container .nav-bar #nav-links ul li:nth-child(5).selected ~ li:last-child {
         -webkit-transform: translateX(-webkit-calc(90px * 5));
         -ms-transform: translateX(calc(90px * 5));
@@ -901,41 +901,41 @@ footer {
         content: "";
         display: table; }
       .drop-menu .container .menu ul li:nth-child(1):hover ~ li:last-child {
-        -webkit-transform: translateX(0) !important;
-        -ms-transform: translateX(0) !important;
-        transform: translateX(0) !important; }
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0); }
       .drop-menu .container .menu ul li:nth-child(1).selected ~ li:last-child {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
         transform: translateX(0); }
       .drop-menu .container .menu ul li:nth-child(2):hover ~ li:last-child {
-        -webkit-transform: translateX(100%) !important;
-        -ms-transform: translateX(100%) !important;
-        transform: translateX(100%) !important; }
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%); }
       .drop-menu .container .menu ul li:nth-child(2).selected ~ li:last-child {
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
         transform: translateX(100%); }
       .drop-menu .container .menu ul li:nth-child(3):hover ~ li:last-child {
-        -webkit-transform: translateX(200%) !important;
-        -ms-transform: translateX(200%) !important;
-        transform: translateX(200%) !important; }
+        -webkit-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        transform: translateX(200%); }
       .drop-menu .container .menu ul li:nth-child(3).selected ~ li:last-child {
         -webkit-transform: translateX(200%);
         -ms-transform: translateX(200%);
         transform: translateX(200%); }
       .drop-menu .container .menu ul li:nth-child(4):hover ~ li:last-child {
-        -webkit-transform: translateX(300%) !important;
-        -ms-transform: translateX(300%) !important;
-        transform: translateX(300%) !important; }
+        -webkit-transform: translateX(300%);
+        -ms-transform: translateX(300%);
+        transform: translateX(300%); }
       .drop-menu .container .menu ul li:nth-child(4).selected ~ li:last-child {
         -webkit-transform: translateX(300%);
         -ms-transform: translateX(300%);
         transform: translateX(300%); }
       .drop-menu .container .menu ul li:nth-child(5):hover ~ li:last-child {
-        -webkit-transform: translateX(400%) !important;
-        -ms-transform: translateX(400%) !important;
-        transform: translateX(400%) !important; }
+        -webkit-transform: translateX(400%);
+        -ms-transform: translateX(400%);
+        transform: translateX(400%); }
       .drop-menu .container .menu ul li:nth-child(5).selected ~ li:last-child {
         -webkit-transform: translateX(400%);
         -ms-transform: translateX(400%);

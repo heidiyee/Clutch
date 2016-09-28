@@ -297,35 +297,35 @@ nav.contact {
                         }
 
                         li:nth-child(1):hover ~ li:last-child {
-                            transform:translateX(90px) !important;
+                            transform:translateX(90px);
                         }
                         li:nth-child(1).selected ~ li:last-child {
                             transform:translateX(90px);
                         }
 
                         li:nth-child(2):hover ~ li:last-child {
-                            transform:translateX(calc(90px * 2)) !important;
+                            transform:translateX(calc(90px * 2));
                         }
                         li:nth-child(2).selected ~ li:last-child {
                             transform:translateX(calc(90px * 2));
                         }
 
                         li:nth-child(3):hover ~ li:last-child {
-                            transform:translateX(calc(90px * 3)) !important;
+                            transform:translateX(calc(90px * 3));
                         }
                         li:nth-child(3).selected ~ li:last-child {
                             transform:translateX(calc(90px * 3));
                         }
 
                         li:nth-child(4):hover ~ li:last-child {
-                            transform:translateX(calc(90px * 4)) !important;
+                            transform:translateX(calc(90px * 4));
                         }
                         li:nth-child(4).selected ~ li:last-child {
                             transform:translateX(calc(90px * 4));
                         }
 
                         li:nth-child(5):hover ~ li:last-child {
-                            transform:translateX(calc(90px * 5)) !important;
+                            transform:translateX(calc(90px * 5));
                         }
                         li:nth-child(5).selected ~ li:last-child {
                             transform:translateX(calc(90px * 5));
